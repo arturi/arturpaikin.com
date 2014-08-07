@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darken</title>
+  <meta name="title" content="Darken">
+  <meta name="description" content="Artur Paikin">
+  
+  <meta property="og:url" content="http://arturpaikin.com/en/darken/">
+  <meta property="og:title" content="Darken">
+  
+  
+  <meta property="og:type" content="article">
+  
+  <meta property="og:site_name" content="Artur Paikin">
+  <meta property="fb:admins" content="638994307">
+  <link rel="icon" type="image/png" href="/assets/artcoffee.png">
+  <link rel="alternate" type="application/rss+xml" title="Artur Paikin′s Blog" href="/en/blog-feed.xml">
+  <link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|PT+Sans:400,700,400italic|Roboto:100,300|Roboto+Slab:300,400&subset=latin,cyrillic" rel="stylesheet">
+  <link href="/assets/classic.css" rel="stylesheet">
+</head>
+<body class="darken">
+<header class="row-1">
+  <nav class="title-nav" role="navigation">
+    <h1 class="title-nav-header"><a href="/">Artur Paikin</a> <span class="title-nav-slash">/</span> <a href="/en/blog/">Blog</a></h1>
+  </nav>
+</header>
+
+<section class="single-entry row-1" role="main">
+  
+  <article class="entry">
+    <header class="entry-header">
+      <h1 class="entry-title">Darken</h1>
+    </header>
+
+    <div class="entry-body content-area">
+      <p><img src="http://i4.photobucket.com/albums/y135/VladLestat/Books/LumosMaxima5.jpg"></p>
+<p>Darken is a simple JavaScript bookmarklet that dims the page you are browsing for night reading. Unlike other solutions, it doesn&#39;t invert colors or otherwise alter page content. Everything stays the same, only less bright.</p>
+<p style="text-align: center;"><a href="javascript:(function(){if(window.isDimmed===true){document.getElementsByTagName('html')[0].style.cssText='filter:none;-webkit-filter:none;-moz-filter:none;';window.isDimmed=false;}else{document.getElementsByTagName('html')[0].style.cssText='filter:brightness(0.3);-webkit-filter:brightness(0.3);-moz-filter:brightness(0.3);-webkit-transform:translateZ(0);';window.isDimmed=true;}})();">Try now</a></p>
+
+<p>Tested in Chrome and Safari on a Mac and iOS. Darken is only able to dim the content part of a browser window, while the address bar and buttons remain bright (however in some cases you can work around this by switching to fullscreen mode). This functionality should really be built into OS, but is’s not for now — the lowest brightness level is still too bright at night. There are apps and standalone browsers that have lower brightness settings, but I prefer to keep it simple.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="dektop-or-laptop-">Dektop or laptop:</h3>
+<p>Just drag the following link to your bookmarks bar: <a href="javascript:(function(){if(window.isDimmed===true){document.getElementsByTagName('html')[0].style.cssText='filter:none;-webkit-filter:none;-moz-filter:none;';window.isDimmed=false;}else{document.getElementsByTagName('html')[0].style.cssText='filter:brightness(0.3);-webkit-filter:brightness(0.3);-moz-filter:brightness(0.3);-webkit-transform:translateZ(0);';window.isDimmed=true;}})();">Darken</a>.</p>
+<h3 id="ios-and-other-mobile-devices-h3-">iOS and other mobile devices:</h3></h3>
+<ol>
+<li><p>Select and copy the code below:</p>
+<pre>javascript:(function(){if(window.isDimmed===true){document.getElementsByTagName('html')[0].style.cssText='filter:none;-webkit-filter:none;-moz-filter:none;';window.isDimmed=false;}else{document.getElementsByTagName('html')[0].style.cssText='filter:brightness(0.3);-webkit-filter:brightness(0.3);-moz-filter:brightness(0.3);-webkit-transform:translateZ(0);';window.isDimmed=true;}})();
+</pre>
+</li>
+<li><p>Create a bookmark on this page and save it.</p>
+</li>
+<li><p>Edit the bookmark and paste the code you’ve previously copied into the bookmark’s address field. Save.</p>
+</li>
+</ol>
+<p>The bookmark will automatically sync to all of your devices where you have syncing enabled.</p>
+<h2 id="usage">Usage</h2>
+<p>Once you feel like the Internet is too bright for your eyes, just click “Darken” and see the magic happen.</p>
+
+    </div>
+
+    <footer class="entry-footer">
+      <time class="entry-timestamp">23 November 2013</time>
+    </footer>
+  </article>
+  
+</section>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter18443392 = new Ya.Metrika({id:18443392, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/18443392" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <!-- Google Analytics counter -->
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36575303-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+  <!-- /Google Analytics counter -->
+  </body>
+</html>
