@@ -132,7 +132,7 @@ pre {
 
 .content-area ul li:before {
   position: absolute;
-  content: '—';
+  content: '\2014';
   text-indent: -1.3em;
 }
 
