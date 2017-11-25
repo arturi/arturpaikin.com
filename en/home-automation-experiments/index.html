@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="is-no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koti Home Automation And Mr. Rudolf, The Door Bell Bot</title>
+  <meta name="title" content="Koti Home Automation And Mr. Rudolf, The Door Bell Bot">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@arturi">
+  <meta name="twitter:creator" content="@arturi">
+    <meta property="og:url" content="http://arturpaikin.com/en/home-automation-experiments/">
+    <meta property="og:title" content="Koti Home Automation And Mr. Rudolf, The Door Bell Bot">
+    <meta name="twitter:title" content="Koti Home Automation And Mr. Rudolf, The Door Bell Bot">
+      <meta name="description" content="Ever since my friends Anna and Sergey gave me an Arduino Starter Kit as a birthday present, I’ve been experimenting with hardware: programming microcontrollers and connecting sensors to build a small home automation system. Prior to that I was a software-only person, with neither experience nor interest in hardware.">
+      <meta name="twitter:description" content="Ever since my friends Anna and Sergey gave me an Arduino Starter Kit as a birthday present, I’ve been experimenting with hardware: programming microcontrollers and connecting sensors to build a small home automation system. Prior to that I was a software-only person, with neither experience nor interest in hardware.">
+    <meta property="og:image" content="http://arturpaikin.com/media/2016/10/kotihome.jpg">
+    <meta name="twitter:image" content="http://arturpaikin.com/media/2016/10/kotihome.jpg">
+    <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Artur Paikin">
+  <meta property="fb:admins" content="638994307">
+  <link rel="icon" type="image/png" href="/assets/artcoffee.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/artcoffee.png">
+  <link rel="alternate" type="application/rss+xml" title="Artur Paikin′s Blog" href="/en/blog-feed.xml">
+
+
+  <link href="http://fonts.googleapis.com/css?family=Lora|PT+Sans:400,700,400italic|Open+Sans:400,600|PT+Serif:400,700&subset=latin,cyrillic" rel="stylesheet">
+  <link href="/assets/main.css" rel="stylesheet">
+</head>
+<body class="home-automation-experiments">
+<header class="main-header">
+  <nav class="title-nav" role="navigation">
+    <h1 class="title-nav-header"> <a class="main-header-title" href="/">Artur Paikin</a> <span class="title-nav-slash">/</span> <a href="/en/blog/">Stories</a></h1>
+  </nav>
+</header>
+
+<main class="single-entry">
+  <article class="entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="entry-header">
+      <h1 class="entry-title" itemprop="headline">Koti Home Automation And Mr. Rudolf, The Door Bell Bot</h1>
+    </header>
+
+    <div class="entry-body content">
+      <figure>
+ <img src="/media/2016/10/kotihome.jpg">
+</figure>
+<p>Ever since my friends Anna and Sergey gave me an Arduino Starter Kit as a birthday present, I’ve been experimenting with hardware: programming microcontrollers and connecting sensors to build a small home automation system. Prior to that I was a software-only person, with neither experience nor interest in hardware.</p>
+<p>I thought I’d try that Arduino kit maybe once, since I had it anyway, and then just shove it in a closet somewhere. Then I connected a thermistor to the controller and saw my home temperature displayed in the console in Celsius, Fahrenheit and Kelvin! Seeing programs come to life, making things happen in real world and reacting to it got me excited for real. Turns out, those boring topics from school physics and math lessons have actual practical application. And I can be part of it, and come up with my own projects.</p>
+<p>So here’s what I’ve been up to.</p>
+<!--more-->
+<hr>
+<h2 id="koti-home-automation"><a class="header-anchor" href="#koti-home-automation" aria-hidden="true"></a> Koti Home Automation</h2>
+<p>A year of fiddling went by and I built myself a simple but extensible home automation system called Koti, which means “home” in Finnish.</p>
+<p>On the picture above is the control panel: you can turn the lamp (or any electronic device) on and off, monitor temperature and light level in the house, see how long it’s been since someone last moved, and activate voice commands in the browser.</p>
+<p>It’s all open source, <a href="https://github.com/arturi/kotihome">check out the code</a>. Built on top of Arduino Uno and Raspberry Pi, with Node.js on client and server. Control panel is built in React, to be cool and all. Plus there is a Telegram chat bot as an optional way for talking to the house on the go, cause that’s what I do now.</p>
+<p><img src="/media/2016/10/koti-telegram1475685086660.jpg" alt="image"></p>
+<p>Here is how I see my home automation setup:</p>
+<figure class="bordered">
+ <img src="/media/2016/10/kotihome-arch1475683648618.jpg">
+</figure>
+<p>Here is what it actually looks like:</p>
+<figure>
+ <img alt="The House Is Not On Fire" src="/media/2016/10/thehouseisnotonfire-51475634069536.jpg">
+ <figcaption>The hardware lives in a cardboard box in Moscow and occasionally scares my subletters</figcaption>
+</figure>
+<p>It’s not crazy advanced or anything, but I am a little proud. Had a lot of fun building it, and learned a ton too.</p>
+<p><img src="/media/2016/10/thehouseisnotonfire-41475684545915.jpg" alt="image"></p>
+<p><img src="/media/2016/10/thehouseisnotonfire-31475639461056.jpg" alt="image"></p>
+<p>Many people are doing similar and more creative projects, my favorite is Leonid Kaganov’s home server, with fingerprint scanner to open the door, and speakers that shame prankers who ring the door bell for fun: <a href="https://lleo.me/dnevnik/2010/04/27.html">part 1</a> and <a href="http://lleo.me/dnevnik/2014/07/07.html">part 2</a> (in Russian, use Google Translate, there are pictures too). And there is an open source <a href="https://ni-c.github.io/heimcontrol.js/">Heimcontrol.js</a> and <a href="http://dashboard.sidlee.com">SidLee Dashboard</a>, to name a few.</p>
+<p>I gave a detailed talk about my project at an awesome New York JavaScript meetup, <a href="http://www.meetup.com/QueensJS/">Queens.js</a>. Check out the <a href="http://bit.ly/notonfire">slides</a> and watch the <a href="https://youtu.be/Z-NpPj6aKJE">video</a>.</p>
+<figure>
+ <a href="https://youtu.be/Z-NpPj6aKJE">
+ <img alt="The House Is Not On Fire" src="/media/2016/10/thehouseisnotonfire-2.jpg">
+ </a>
+ <figcaption>Originally titled “Divide and conquer your house”</figcaption>
+</figure>
+<h2 id="mr-rudolf"><a class="header-anchor" href="#mr-rudolf" aria-hidden="true"></a> Mr. Rudolf</h2>
+<p>In winter of 2016 I moved to New York.</p>
+<p><img src="/media/2016/10/img_99491475695633866.jpg" alt="image"></p>
+<p>And I wanted to continue with my experimental projects on the go. But it made no sense to <nobr>re-create</nobr> the whole home automation experience at a temporary sublet, so I looked for something more portable. Around that time I discovered <a href="https://www.sparkfun.com/products/13678"><abbr>ESP</abbr>8266</a> and, based on it, <a href="https://aliexpress.com/item/New-Wireless-module-CH340-NodeMcu-V3-Lua-WIFI-Internet-of-Things-development-board-based-ESP8266/32683073762.html">Node<abbr>MCU</abbr> board for $3 on Aliexpress</a>. Also known as the more robust <a href="https://www.adafruit.com/product/2821">Adafruit Feather Huzzah</a>. It’s a small Arduino-compatable microcontroller with <nobr>Wi-Fi</nobr> and an ability to deep-sleep (thus consuming very little battery) and wake up either by timer or hardware interrupt, such as a button.</p>
+<p><img src="/media/2016/10/esp82661475696948714.jpg" alt="image"></p>
+<p>So I began exploring and asking myself how could I put this awesome tech to test. At that time we didn’t have American sim-cards and the intercom in our building was broken, so we couldn’t get packages delivered. Which I always believed to be so easy and “all the cool kids in America are doing it”. Here is how it went for us: <abbr>USPS</abbr> would just leave a note at the door saying “we couldn’t deliver, get the package at your local post office”, which is all right. But <abbr>UPS</abbr> would drive around with my package for a few days, and then leave a note saying “well, we couldn’t deliver, so know you have to get it yourself at our location somewhere on the South Pole. Good luck!”.</p>
+<p>This madness had to stop. I went to <a href="http://tinkersphere.com/">Tinkersphere</a>, which is basically an Aliexpress website come to life, and bought a hot yellow button, a battery case and some wires. The result:</p>
+<figure>
+ <img src="/media/2016/10/20160317-img_89141475695801913.jpg">
+ <figcaption>On the left is my neighbourhood in Ridgewood, on the right is a cool macho picture, and a note from <abbr>UPS</abbr> saying “we couldn’t deliver your package”, and in the middle is the broken intercom and the button I added to it</figcaption>
+</figure>
+<p><img src="/media/2016/10/20160317-img_89251475695801919.jpg" alt="image"></p>
+<p>So it’s a simple button, connected to <abbr>ESP</abbr>8266 that sleeps until pressed. Then it wakes up, connects to a <nobr>Wi-Fi</nobr> network (I borrowed the password from local barber shop), and sends a request to my <abbr>VPS</abbr> server, which in turn sends me a message via <a href="https://core.telegram.org/bots/">Telegram Bot <abbr>API</abbr></a>.</p>
+<figure class="small-image">
+ <img src="/media/2016/10/20160316-img_89111475696587770.jpg">
+</figure>
+<p>All of the code I used for the server and <abbr>ESP</abbr>8266 is also <a href="https://github.com/arturi/mrrudolf">open source</a>.</p>
+<p>And I gave a light and fun <nobr>10-minute</nobr> talk about this project — after which I’m known as developer-comedian — at my favorite JS meetup in the universe, <a href="http://brooklynjs.com">Brooklyn JS</a>, with real cool demo of the button in action. Check out the <a href="https://youtu.be/CvorlYi4L_c">video</a> and <a href="http://bit.ly/mrrudolf">slides</a>.</p>
+<a href="https://youtu.be/CvorlYi4L_c">
+ <img src="/media/2016/10/robot-talks-1.jpg">
+</a>
+
+    </div>
+
+    <footer class="entry-footer">
+      <p><time class="entry-timestamp" itemprop="datePublished" datetime="2016-10-06T11:00:00+00:00">6 October 2016</time></p>
+      <p>Get in touch and follow me via <a href="http://twitter.com/arturi">Twitter</a>, <a href="http://facebook.com/arturpaikin">Facebook</a>, <a href="/en/blog-feed.xml">RSS</a> and <a href="mailto:artur@arturpaikin.com">email</a>.<br> If you like what I do, you can <a href="http://arturpaikin.com/en/thanks">thank me</a>.</p>
+    </footer>
+  </article>
+</main>
+
+  <script>
+    if ('ontouchstart' in window) {
+      document.documentElement.classList.add('is-touch')
+    }
+    document.documentElement.classList.remove('is-no-js')
+  </script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter18443392 = new Ya.Metrika({id:18443392, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/18443392" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <!-- Google Analytics counter -->
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36575303-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+  <!-- /Google Analytics counter -->
+  </body>
+</html>
